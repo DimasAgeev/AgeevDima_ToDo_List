@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* button {
+  cursor: pointer;
+}
+/* BODY
+==================================== */
+body {
+  height: 100vh;
+  background: url(./img/Горы.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* CONTAINER
+==================================== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* FORM
+==================================== */
+form {
+  background-color: rgba(187, 205, 228, 0.607);
+  margin: 3rem 1rem 3rem 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+}
+.form_content {
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(204, 209, 209, 0.749);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.content_inner {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.content_inner button {
+  flex: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(187, 205, 228, 0.496);
+  border-color: rgba(187, 205, 228, 0.607);
+}
+input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+  border-color: #fff;
+}
+.enter_todo {
+  flex: 3;
+}
+.search {
+  flex: 1;
+}
+.content_inner_background {
+  display: flex;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(187, 205, 228, 0.496);
+  border-radius: 1rem;
+}
+.active_content_inner_background {
+  background-color: rgba(117, 129, 152, 0.996);
+}
+.todo_text {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(204, 209, 209, 0.749);
+  text-transform: capitalize;
+}
+.active_todo_text {
+  text-decoration: line-through;
+}
+.content_date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.content_date button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-radius: 0.5rem;
+  background-color: rgba(204, 209, 209, 0.749);
+  border-color: rgba(204, 209, 209, 0.749);
+}
+.date {
+  margin-top: 3rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  text-align: center;
+}
+.checkbox {
+  transform: scale(2.5);
+  margin-right: 0.5rem;
+}
+.list_content {
+  overflow: auto;
+  max-height: 26rem;
+}
